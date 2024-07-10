@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Challenge - Encriptador de Texto ONE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+</head>
+
+<body>
+  <div id="container" class="container">
+    <div class="first-container">
+      <div class="logo-title-container">
+        <img src="img/logo.svg" alt="" class="logo" id="logo" height="48" width="120" decoding="async">
+        <h1 class="title">Challenge - Encriptador de Texto</h1>
+      </div>
+      <div class="text-input-container">
+        <!-- <label for="text-input">Ingrese el texto aqui</label> -->
+        <textarea class="text-input" id="text-input" placeholder="Ingrese el texto aqui"
+          aria-label="Ingrese el texto aqui"></textarea>
+        <p id="alert-message">
+          <img src="img/bi_exclamation-circle-fill.svg" alt="" width="16" height="16" decoding="async">
+          Solo letras minusculas y sin acentos
+        </p>
+        <div class="btn-container">
+          <button type="button" id="btn-encrypt" class="btn-encrypt">Encriptar</button>
+          <button type="button" id="btn-decrypt" class="btn-decrypt">Desencriptar</button>
+        </div>
+        <p class="contact-icons">
+          <a href="https://github.com/GustavoJCL" target="_blank">
+            <img src="img/github.svg" alt="img-github" class="img-github" decoding="async" width="24" height="24">
+          </a>
+          <a href="https://www.linkedin.com/in/gustavojoaquin" target="_blank">
+            <img src="img/linkedin.gif" alt="img-linkedin" class="img-linkedin" decoding="async" width="24" height="24">
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="text-output-container">
+      <div class="text-output" id="text-output">
+        <img src="img/muñeco.svg" alt="img-muñeco" class="img-muneco" id="img-muñeco" decoding="async" width="304"
+          height="336">
+        <p class="text-output-title">Ningun mensaje fue encontrado</p>
+        <p class="text-output-text">Ingresa el texto que deseas encriptar o desencriptar</p>
+      </div>
+      <div class="text-output-result">
+        <p id="text-result" class="text-result"></p>
+        <button type="button" id="btn-copy" class="btn-copy">Copiar</button>
+
+      </div>
+    </div>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>

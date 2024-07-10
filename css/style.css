@@ -1,0 +1,240 @@
+body{
+  background: var(--light-blue-light-blue-100, #F3F5FC);
+}
+
+.container{
+  padding: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items:normal;
+  justify-content:center;
+}
+.first-container{
+  padding: 56px;
+}
+.text-output-container{
+  padding: 56px;
+  width: 400px;
+  height: 680px;
+  /* flex-shrink: 0; */
+  border-radius: 32px;
+  background: var(--white, #FFF);
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.text-output-result{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.text-result{
+
+  color: var(--gray-gray-400, #495057);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+.img-muneco{
+  width: 304px;
+  height: 336px;
+  flex-shrink: 0;
+  padding-top: 42px;
+}
+.text-output{
+  display: flex;
+  width: 336px;
+  flex-direction: column;
+  align-items:center;
+  gap: 16px;
+}
+.text-output-title{
+  align-self: stretch;
+  color: var(--gray-gray-500, #343A40);
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+.text-output-text{
+  align-self: stretch;
+  color: var(--gray-gray-400, #495057);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.logo{
+  width: 120px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.logo-title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text-input{
+  width: 600px;
+  height: 512px;
+  border: 3px transparent;
+  padding: 5px;
+  color: var(--dark-blue-dark-blue-300, #0A3871);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+
+  background: transparent;
+
+}
+
+.alert.message{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-container{
+  display: flex;
+  width: 680px;
+  align-items: flex-start;
+  gap: 24px;
+}
+.btn-encrypt{
+  width: 328px;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--dark-blue-dark-blue-300, #0A3871);
+  flex: 1 0 0;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.btn-decrypt{
+  width: 328px;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+  background: #D8DFE8;
+  flex: 1 0 0;
+  color: var(--dark-blue-dark-blue-300, #0A3871);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.text-input-result{
+  display: flex;
+  flex-direction: column;
+  align-items:unsafe;
+  justify-content:space-between;
+}
+
+.btn-copy{
+  display:none;
+  width: 336px;
+  max-height: 71px;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 24px;
+  border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+
+  flex: 1 0 0;
+  color: var(--dark-blue-dark-blue-300, #0A3871);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1023px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-container{
+    width: 100%;
+  }
+  .title{
+    display: none;
+  }
+  .text-output-container{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .text-output-result{
+    width: 100%;
+  }
+  .btn-copy{
+    width: 100%;
+  }
+  .img-muneco{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 480px){
+  body{
+    width: 100%;
+  }
+  .first-container{
+    width: 70%;
+  }
+  .text-input{
+    width: 100%;
+  }
+  .btn-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn-encrypt{
+    /* width: 100%; */
+  }
+  .btn-decrypt{
+    /* width: 100%; */
+  }
+}
